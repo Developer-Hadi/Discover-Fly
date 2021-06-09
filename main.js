@@ -7,7 +7,7 @@ function handleTicketChange(isCrease, ticketClass){
     if(isCrease == false && ticketCount>0){
         ticketCount--;
         if(ticketCount==0)
-       { alert('Ticket can not be negative!!!')}
+       { alert('আরে হাবলু নাকি ? টিকিট কি কখনও ঋণাত্মক হয়!!!')}
     }
     ticketInput.value = ticketCount;
 
@@ -26,28 +26,13 @@ function handleTicketChange(isCrease, ticketClass){
     document.getElementById('vat').innerHTML = '$ '+ vat;
 
     // Total Amount
-
     const totalAmount = subTotal + vat;
     document.getElementById('total-amount').innerHTML ='$ '+  totalAmount;
-
 }
 
-
-
-
-// const increase = document.getElementById('increase');
-// increase.addEventListener('click', function(){
-//     const ticketInput = document.getElementById('first-class-ticket');
-//     const ticketCount = parseInt(ticketInput.value);
-//     const ticketNewCount = ticketCount + 1;
-//     ticketInput.value = ticketNewCount;
-    
-// });
-// const decrease = document.getElementById('decrease');
-// decrease.addEventListener('click', function(){
-//     const ticketInput = document.getElementById('first-class-ticket');
-//     const ticketCount = parseInt(ticketInput.value);
-//     const ticketNewCount = ticketCount - 1;
-//     ticketInput.value = ticketNewCount;
-    
-// });
+document.getElementById('book').addEventListener('click', function(){
+    const mainContent = document.getElementById('main-content');
+    const orderCompleted = document.getElementById('order-complete');
+    mainContent.style.display = 'none';
+    orderCompleted.style.display = 'block';
+})

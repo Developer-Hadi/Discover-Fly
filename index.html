@@ -27,7 +27,7 @@
     </header>
 
     <!--Booking Section-->
-    <main class="main-content container">
+    <main id="main-content" class="main-content container">
         <div class="booking-form">
             <h3>Booking Flights</h3>
             <div class="input-group">
@@ -73,7 +73,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p id="sub-total">$500</p>
+                        <p id="sub-total">$ 0</p>
                     </div>
                 </div>
 
@@ -82,7 +82,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p id="vat">$50</p>
+                        <p id="vat">$ 0</p>
                     </div>
                 </div>
                 <hr>
@@ -91,21 +91,25 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p id="total-amount">$550</p>
+                        <p id="total-amount">$ 0</p>
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="book" class="btn-style">Book Now</button>
         </div>
 
         <div class="booking-content">
             <h1>discover <br> around the world</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
         </div>
+    </main>
+
+    <section id="order-complete">
+        <h1>Order Completed !!! <br>Thanks for your order.</h1>
     </section>
 
 
-    <script src="main.js"></script>
+    <script src="main.js" class="container"></script>
 </body>
 
 </html>
